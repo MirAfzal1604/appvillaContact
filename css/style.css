@@ -117,15 +117,23 @@ body {
 
 @keyframes loading {
     0% {
-        border: 20px solid var(--mainColor);
+        border: 0px solid var(--mainColor);
         opacity: 1;
     }
+    25% {
+        border: 10px solid var(--mainColor);
+        opacity: 0.75;
+    }
     50% {
-        border: 40px solid var(--mainColor);
+        border: 20px solid var(--mainColor);
         opacity: 0.5;
     }
+    75% {
+        border: 30px solid var(--mainColor);
+        opacity: 0.25;
+    }
     100% {
-        border: 60px solid var(--mainColor);
+        border: 40px solid var(--mainColor);
         opacity: 0;
     }
 }
